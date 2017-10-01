@@ -1,3 +1,5 @@
+(YOU MUST HAVE NPM INSTALLED)
+
 1. Download this
 2. Navigate to project
 
