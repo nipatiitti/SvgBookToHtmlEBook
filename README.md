@@ -1,15 +1,10 @@
-(YOU MUST HAVE NPM INSTALLED)
+# Instructions
+Please note that [Node.js and npm](https://nodejs.org/ "You can install both with just the node.js installer") are required for this to work.
 
-1. Download this
-2. Navigate to project
+1. Clone or download the repository to your computer
+2. Navigate to the project's directory in cmd (or any equivalent CLI)
+3. Run `npm install`
+4. Copy the SVG files to _src/pages_ (the files must be named _1.svg_, _2.svg_ etc.)
+5. Run `npm run build`
 
-3. Run:
-    `npm install`
-
-4. Copy new SVG files to src/pages (Must be named 1.svg, 2.svg etc...)
-
-5. Run:
-  `npm run build`
-  
-6. The book is in now builds :D
-
+It'll take a few minutes for the book to be built, after which it'll be available in the _build_ folder and can be read through _index.html_.
