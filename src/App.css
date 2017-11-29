@@ -1,58 +1,134 @@
-.App {
-  display: flex;
-  flex-direction: row;
-  font-size: 4vh;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+* {
+  min-height: 0;
+  min-width: 0;
 }
 
-.base-list {
-  list-style-type: none;
-  text-decoration: none;
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  height: 100%;
+  width: 100%;
+}
+
+
+img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  flex-direction: row;
+  flex: 11;
 }
 
 .half {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.selected {
+  background-color: #c4c4c4;
+}
+
+
+#sliderContainer {
+  box-shadow: 0px -2px 17px 0px rgba(0,0,0,0.75);
+  margin-top: 10px;
   flex: 1;
 }
 
-#arrows {
+#hideButtonContainer {
+  height: 0px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.arrow {
-
-}
-
-#left {
-  align-items: center;
-  flex: 5;
   flex-direction: column;
-  margin: 20px;
-  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-img {
-  align-self: center;
+.hidebutton {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  z-index: 4;
 }
 
-.link:hover {
+.itemHeader {
+  position: relative;
+  z-index: 2;
+}
+
+.itemImage{
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.sliderItem {
+  position: relative;
+  align-items: center;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  align-items: center;
+  background-color   : #e5e5e5;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.sliderItem :hover {
   cursor: pointer;
 }
 
-.top {
-  margin: 10px;
-  display: flex;
-  justify-content: space-around;
+.slick-center .sliderItem {
+  background-color: #c4c4c4;
 }
 
-.list-item {
-  padding: 10px;
-  border-left: 6px solid red;
-  border-bottom: 1px solid grey;
-  background-color: lightgrey;
-}
-
-a {
-
+.input {
+  z-index: 1;
+  box-shadow: -2px 0px 17px 0px rgba(0,0,0,0.75);
+  padding-left   : 15px;
+  padding-right   : 15px;
+  padding-top : 5px;
+  padding-bottom: 5px;
+  margin            : 5px;
+  background-color   : white;
+  border-color       : black;
+  border-width       : 1px;
+  border-radius      : 5px;
 }
