@@ -122,7 +122,6 @@ class App extends Component {
 						<div className="itemHeader">
 							<p>{"s. " + (index+1).toString()}</p>
 						</div>
-						<img className="itemImage" src={this.state.list[index].photo}/>
 					</div>
 				</div>
 
